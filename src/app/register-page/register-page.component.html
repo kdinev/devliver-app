@@ -32,9 +32,6 @@
       }
     </igx-input-group>
     <div class="column-layout registration-inputs">
-      <button igxButton="contained" type="button" class="register-button">
-        Register
-      </button>
       <igx-input-group type="border" class="first-name-input">
         <input type="email" [(ngModel)]="value4" required="true" igxInput #igxInput4 />
         <label igxLabel>Email address</label>
@@ -56,6 +53,9 @@
           <igx-hint>This field is required</igx-hint>
         }
       </igx-input-group>
+      <button igxButton="contained" type="button" class="register-button">
+        Register
+      </button>
     </div>
   </div>
 </div>

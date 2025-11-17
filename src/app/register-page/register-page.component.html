@@ -1,0 +1,61 @@
+<div class="row-layout registration-form-container">
+  <div class="column-layout registration-form">
+    <h4 class="register-title">
+      Register
+    </h4>
+    <igx-input-group type="border" class="first-name-input">
+      <input type="text" [(ngModel)]="value" required="true" igxInput #igxInput />
+      <label igxLabel>First Name</label>
+      @if (igxInput.validity.valueMissing) {
+        <igx-hint>This field is required</igx-hint>
+      }
+    </igx-input-group>
+    <igx-input-group type="border" class="first-name-input">
+      <input type="text" [(ngModel)]="value1" required="true" igxInput #igxInput1 />
+      <label igxLabel>Last Name</label>
+      @if (igxInput1.validity.valueMissing) {
+        <igx-hint>This field is required</igx-hint>
+      }
+    </igx-input-group>
+    <igx-input-group type="border" class="first-name-input">
+      <input type="text" [(ngModel)]="value2" required="true" igxInput #igxInput2 />
+      <label igxLabel>Company</label>
+      @if (igxInput2.validity.valueMissing) {
+        <igx-hint>This field is required</igx-hint>
+      }
+    </igx-input-group>
+    <igx-input-group type="border" class="first-name-input">
+      <input type="text" [(ngModel)]="value3" required="true" igxInput #igxInput3 />
+      <label igxLabel>Job Title</label>
+      @if (igxInput3.validity.valueMissing) {
+        <igx-hint>This field is required</igx-hint>
+      }
+    </igx-input-group>
+    <div class="column-layout registration-inputs">
+      <button igxButton="contained" type="button" class="register-button">
+        Register
+      </button>
+      <igx-input-group type="border" class="first-name-input">
+        <input type="email" [(ngModel)]="value4" required="true" igxInput #igxInput4 />
+        <label igxLabel>Email address</label>
+        @if (igxInput4.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="first-name-input">
+        <input type="password" [(ngModel)]="value5" required="true" igxInput #igxInput5 />
+        <label igxLabel>Password</label>
+        @if (igxInput5.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="first-name-input">
+        <input type="password" [(ngModel)]="value6" required="true" igxInput #igxInput6 />
+        <label igxLabel>Repeat password</label>
+        @if (igxInput6.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+    </div>
+  </div>
+</div>
